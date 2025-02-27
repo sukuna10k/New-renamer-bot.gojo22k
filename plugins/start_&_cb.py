@@ -43,26 +43,26 @@ from helper.utils import humanbytes
 from plugins import __version__ as _bot_version_, __developer__, __database__, __library__, __language__, __programer__
 
 upgrade_button = InlineKeyboardMarkup([[        
-        InlineKeyboardButton('buy premium ✓', user_id=int(6705898491)),
+        InlineKeyboardButton('Acheter premium ✓', user_id=int(6705898491)),
          ],[
-        InlineKeyboardButton("Bᴀᴄᴋ", callback_data = "start")
+        InlineKeyboardButton("Retour", callback_data = "start")
 ]])
 
 upgrade_trial_button = InlineKeyboardMarkup([[        
-        InlineKeyboardButton('buy premium ✓', user_id=int(6705898491)),
+        InlineKeyboardButton('Acheter premium ✓', user_id=int(6705898491)),
          ],[
-        InlineKeyboardButton("ᴛʀɪᴀʟ - 𝟷𝟸 ʜᴏᴜʀs ✓", callback_data = "give_trial"),
-        InlineKeyboardButton("Bᴀᴄᴋ", callback_data = "start")
+        InlineKeyboardButton("Gratuit - 𝟷𝟸 heures ✓", callback_data = "give_trial"),
+        InlineKeyboardButton("Retour", callback_data = "start")
 ]])
 
 start_button = InlineKeyboardMarkup([[        
-        InlineKeyboardButton('Uᴩᴅᴀ𝚃ᴇꜱ', url='https://t.me/Digital_Botz'),
-        InlineKeyboardButton('Sᴜᴩᴩᴏʀ𝚃', url='https://t.me/DigitalBotz_Support')
+        InlineKeyboardButton('Mis à jour🤪', url='https://t.me/Botzflix'),
+        InlineKeyboardButton('Support🤗', url='https://t.me/BotzflixSupport')
         ],[
-        InlineKeyboardButton('Aʙᴏυᴛ', callback_data='about'),
-        InlineKeyboardButton('Hᴇʟᴩ', callback_data='help')
+        InlineKeyboardButton('À propos', callback_data='about'),
+        InlineKeyboardButton('Aide', callback_data='help')
         ],[
-        InlineKeyboardButton('💸 ᴜᴘɢʀᴀᴅᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ 💸', callback_data='upgrade')
+        InlineKeyboardButton('🔮 Mis à jour Premium 🏆', callback_data='upgrade')
          ]])
         
 @Client.on_message(filters.private & filters.command("start"))
@@ -92,15 +92,15 @@ async def myplan(client, message):
        # time_left_str = await digital_botz.checking_remaining_time(user_id)
         #expiry_str_in_ist = time_left_str + datetime.datetime.now()
         
-        await message.reply_text(f"👤 ᴜꜱᴇʀ :- {user}\n⚡ ᴜꜱᴇʀ ɪᴅ :- <code>{user_id}</code>\nᴘʟᴀɴ :- `{type}`\nᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ :- `{humanbytes(limit)}`\nᴛᴏᴅᴀʏ ᴜsᴇᴅ :- `{humanbytes(used)}\n`ʀᴇᴍᴀɪɴ :- `{humanbytes(remain)}`\n⏰ ᴛɪᴍᴇ ʟᴇꜰᴛ : {time_left_str}\n⌛️ ᴇxᴘɪʀʏ ᴅᴀᴛᴇ : {expiry_str_in_ist}", quote=True)
+        await message.reply_text(f"👤 Toi :- {user}\n⚡ Ton ID :- <code>{user_id}</code>\nPlan :- `{type}`\nLimite quotidienne :- `{humanbytes(limit)}`\nUtilisé aujourd'hui :- `{humanbytes(used)}\n`Remain:- `{humanbytes(remain)}`\n⏰ Dernière Heures : {time_left_str}\n⌛️ Date d'expiration : {expiry_str_in_ist}", quote=True)
     else:
         user_data = await digital_botz.get_user_data(user_id)
         limit = user_data.get('uploadlimit', 0)
         used = user_data.get('used_limit', 0)
         remain = int(limit)- int(used)
         type = user_data.get('usertype', "Free")
-        await message.reply_text(f"👤 ᴜꜱᴇʀ :- {user}\n⚡ ᴜꜱᴇʀ ɪᴅ :- <code>{user_id}</code>\nᴘʟᴀɴ :- `{type}`\nᴅᴀɪʟʏ ᴜᴘʟᴏᴀᴅ ʟɪᴍɪᴛ :- `{humanbytes(limit)}`\nᴛᴏᴅᴀʏ ᴜsᴇᴅ :- `{humanbytes(used)}\n`ʀᴇᴍᴀɪɴ :- `{humanbytes(remain)}`\n⏰ ᴇxᴘɪʀᴇᴅ ᴅᴀᴛᴇ :- ʟɪғᴇᴛɪᴍᴇ\n\nɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴛᴀᴋᴇ ᴘʀᴇᴍɪᴜᴍ ᴛʜᴇɴ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ 👇",
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("💸 ᴄʜᴇᴄᴋᴏᴜᴛ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ 💸", callback_data='upgrade')]]), quote=True)			 
+        await message.reply_text(f"👤 Toi :- {user}\n⚡ Ton ID :- <code>{user_id}</code>\nPlan :- `{type}`\nLimite journalière :- `{humanbytes(limit)}`\nUtilisé aujourd'hui :- `{humanbytes(used)}\n`Remain :- `{humanbytes(remain)}`\n⏰ Date d'expiration:- Temps de vie\n\nSi tu veux un plan Premium, clique sur le. Bouton 👇",
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("♨️ Obtenir le plan premium ♨️", callback_data='upgrade')]]), quote=True)			 
  
 
 @Client.on_message(filters.private & filters.command("plans"))
@@ -131,15 +131,15 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("ᴛʜᴜᴍʙɴᴀɪʟ", callback_data = "thumbnail"),
-                InlineKeyboardButton("ᴄᴀᴘᴛɪᴏɴ", callback_data = "caption")
+                InlineKeyboardButton("Vignette", callback_data = "thumbnail"),
+                InlineKeyboardButton("Légende", callback_data = "caption")
                 ],[          
-                InlineKeyboardButton("ᴄᴜsᴛᴏᴍ ғɪʟᴇ ɴᴀᴍᴇ", callback_data = "custom_file_name")    
+                InlineKeyboardButton("Personnalisé le nom de fichier", callback_data = "custom_file_name")    
                 ],[          
-                InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data = "about"),
-                InlineKeyboardButton("ᴍᴇᴛᴀᴅᴀᴛᴀ", callback_data = "digital_meta_data")
+                InlineKeyboardButton("À propos", callback_data = "about"),
+                InlineKeyboardButton("Meta-Donnéé", callback_data = "digital_meta_data")
                                      ],[
-                InlineKeyboardButton("Bᴀᴄᴋ", callback_data = "start")
+                InlineKeyboardButton("Retour", callback_data = "start")
                   ]]))         
         
     elif data == "about":
@@ -148,8 +148,7 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
-                InlineKeyboardButton("𝚂ᴏᴜʀᴄᴇ",
-     callback_data = "source_code"), #Whoever is deploying this repo is given a warning ⚠️ not to remove this repo link #first & last warning ⚠️
+                InlineKeyboardButton("Contact", callback_data = "source_code"), #Whoever is deploying this repo is given a warning ⚠️ not to remove this repo link #first & last warning ⚠️
                 InlineKeyboardButton("ʙᴏᴛ sᴛᴀᴛᴜs", callback_data = "bot_status")
                 ],[
                 InlineKeyboardButton("ʟɪᴠᴇ sᴛᴀᴛᴜs", callback_data = "live_status"),
