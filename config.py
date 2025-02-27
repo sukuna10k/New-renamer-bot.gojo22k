@@ -72,10 +72,10 @@ class rkn(object):
 <blockquote> Crée par : @BotZFlix 🤪</blockquote> </b>"""
 
     ABOUT_TXT = """<b>╭───────────⍟
-├🤖 ᴍy ɴᴀᴍᴇ : {}
-├🖥️ Dᴇᴠᴇʟᴏᴩᴇʀꜱ : {}
-├👨‍💻 Pʀᴏɢʀᴀᴍᴇʀ : {}
-├📕 Lɪʙʀᴀʀy : {}
+├🤖 Mon Nom : {}
+├🖥️ Développeur : <a href='t.me/Kingcey'>◡̈⃝ㅤ🇰ιηg¢єу</a>
+├👨‍💻 Programmeur : <a href='t.me/Botzflix'>BotZFlix</a>
+├📕 Lɪʙʀᴀʀie : {}
 ├✏️ Lᴀɴɢᴜᴀɢᴇ: {}
 ├💾 Dᴀᴛᴀ Bᴀꜱᴇ: {}
 ├📊 ᴠᴇʀsɪᴏɴ: 3.5.1 </b>
