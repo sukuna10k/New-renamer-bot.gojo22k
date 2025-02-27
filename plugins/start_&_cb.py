@@ -149,12 +149,12 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
                 InlineKeyboardButton("Contact", callback_data = "source_code"), #Whoever is deploying this repo is given a warning ⚠️ not to remove this repo link #first & last warning ⚠️
-                InlineKeyboardButton("ʙᴏᴛ sᴛᴀᴛᴜs", callback_data = "bot_status")
+                InlineKeyboardButton("Status DU bot", callback_data = "bot_status")
                 ],[
-                InlineKeyboardButton("ʟɪᴠᴇ sᴛᴀᴛᴜs", callback_data = "live_status"),
-                InlineKeyboardButton("ᴜᴘɢʀᴀᴅᴇ", callback_data = "upgrade")
+                InlineKeyboardButton("Status de vie", callback_data = "live_status"),
+                InlineKeyboardButton("♨️ Premium ♨️", callback_data = "upgrade")
                 ],[   
-                InlineKeyboardButton("Bᴀᴄᴋ", callback_data = "start")
+                InlineKeyboardButton("Retour", callback_data = "start")
             
            ]]))    
         
@@ -173,9 +173,9 @@ async def cb_handler(client, query: CallbackQuery):
         free_trial_status = await digital_botz.get_free_trial_status(query.from_user.id)
         if not free_trial_status:            
             await digital_botz.give_free_trail(query.from_user.id)
-            new_text = "**ʏᴏᴜʀ ᴘʀᴇᴍɪᴜᴍ ᴛʀɪᴀʟ ʜᴀs ʙᴇᴇɴ ᴀᴅᴅᴇᴅ ғᴏʀ 𝟷𝟸 ʜᴏᴜʀs.\n\nʏᴏᴜ ᴄᴀɴ ᴜsᴇ ꜰʀᴇᴇ ᴛʀᴀɪʟ ꜰᴏʀ 𝟷𝟸 ʜᴏᴜʀs ꜰʀᴏᴍ ɴᴏᴡ 😀\n\nआप अब से 𝟷𝟸 घण्टा के लिए निःशुल्क ट्रायल का उपयोग कर सकते हैं 😀**"
+            new_text = "**Ton plan de Premium a été ajouté pour 12 heures de temps.\n\nEssaie la fonctionnalité premium voir. C'est trop géniale 🤪**"
         else:
-            new_text = "**🤣 ʏᴏᴜ ᴀʟʀᴇᴀᴅʏ ᴜsᴇᴅ ғʀᴇᴇ ɴᴏᴡ ɴᴏ ᴍᴏʀᴇ ғʀᴇᴇ ᴛʀᴀɪʟ. ᴘʟᴇᴀsᴇ ʙᴜʏ sᴜʙsᴄʀɪᴘᴛɪᴏɴ ʜᴇʀᴇ ᴀʀᴇ ᴏᴜʀ 👉 /plans**"
+            new_text = "**🤣T'avais déjà ressue le plan gratuit mon gars😑. Clique sur 👉 /plans pour voir ton plan**"
         await client.send_message(query.from_user.id, text=new_text)
 
     elif data == "thumbnail":
@@ -183,7 +183,7 @@ async def cb_handler(client, query: CallbackQuery):
             text=rkn.THUMBNAIL,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-             InlineKeyboardButton(" Bᴀᴄᴋ", callback_data = "help")]])) 
+             InlineKeyboardButton(" Retour", callback_data = "help")]])) 
       
     elif data == "caption":
         await query.message.edit_text(
@@ -197,14 +197,14 @@ async def cb_handler(client, query: CallbackQuery):
             text=rkn.CUSTOM_FILE_NAME,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-             InlineKeyboardButton(" Bᴀᴄᴋ", callback_data = "help")]])) 
+             InlineKeyboardButton(" Retour", callback_data = "help")]])) 
       
     elif data == "digital_meta_data":
         await query.message.edit_text(
             text=rkn.DIGITAL_METADATA,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-             InlineKeyboardButton(" Bᴀᴄᴋ", callback_data = "help")]])) 
+             InlineKeyboardButton(" Retour", callback_data = "help")]])) 
       
     elif data == "bot_status":
         total_users = await digital_botz.total_users_count()
@@ -216,7 +216,7 @@ async def cb_handler(client, query: CallbackQuery):
             text=rkn.BOT_STATUS.format(uptime, total_users, total_premium_users, sent, recv),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-             InlineKeyboardButton(" Bᴀᴄᴋ", callback_data = "about")]])) 
+             InlineKeyboardButton(" Retour", callback_data = "about")]])) 
       
     elif data == "live_status":
         currentTime = time.strftime("%Hh%Mm%Ss", time.gmtime(time.time() - client.uptime))    
@@ -233,7 +233,7 @@ async def cb_handler(client, query: CallbackQuery):
             text=rkn.LIVE_STATUS.format(currentTime, cpu_usage, ram_usage, total, used, disk_usage, free, sent, recv),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[
-             InlineKeyboardButton(" Bᴀᴄᴋ", callback_data = "about")]])) 
+             InlineKeyboardButton(" Retour", callback_data = "about")]])) 
       
     elif data == "source_code":
         await query.message.edit_text(
@@ -242,10 +242,10 @@ async def cb_handler(client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup([[
                 #⚠️ don't change source code & source link ⚠️ #
            #Whoever is deploying this repo is given a warning ⚠️ not to remove this repo link #first & last warning ⚠️   
-                InlineKeyboardButton("💞 Sᴏᴜʀᴄᴇ Cᴏᴅᴇ 💞", url="https://github.com/DigitalBotz/Digital-Rename-Bot")
+                InlineKeyboardButton("💞 T'aime les films et séries ? 💞", url="https://t.me/ZFlixTeam")
             ],[
-                InlineKeyboardButton("🔒 Cʟᴏꜱᴇ", callback_data = "close"),
-                InlineKeyboardButton("◀️ Bᴀᴄᴋ", callback_data = "start")
+                InlineKeyboardButton("🔒 Fermer", callback_data = "close"),
+                InlineKeyboardButton("◀️ Retour", callback_data = "start")
                  ]])          
         )
     elif data == "close":
