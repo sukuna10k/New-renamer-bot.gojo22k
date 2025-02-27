@@ -85,43 +85,43 @@ class rkn(object):
 <b>•></b> /start Démarrer le bot.
 
 ✏️ <b><u>Comment renommer un fichier ?</u></b>
-<b>•></b> Sᴇɴᴅ Aɴy Fɪʟᴇ Aɴᴅ Tyᴩᴇ Nᴇᴡ Fɪʟᴇ Nɴᴀᴍᴇ \nAɴᴅ Aᴇʟᴇᴄᴛ Tʜᴇ Fᴏʀᴍᴀᴛ [ document, video, audio ].           
-ℹ️ 𝗔𝗻𝘆 𝗢𝘁𝗵𝗲𝗿 𝗛𝗲𝗹𝗽 𝗖𝗼𝗻𝘁𝗮𝗰𝘁 :- <a href=https://t.me/DigitalBotz_Support>𝑺𝑼𝑷𝑷𝑶𝑹𝑻 𝑮𝑹𝑶𝑼𝑷</a>
+<b>•></b> Envoyez un fichier et tapez le nouveau nom du fichier, puis sélectionnez le format [document, vidéo, audio].           
+ℹ️ Pour tout aide, contacte-nous :- <a href=https://t.me/Botzflix_Support>𝑺𝑼𝑷𝑷𝑶𝑹𝑻 𝑮𝑹𝑶𝑼𝑷</a>
 """
 
     UPGRADE= """
-•⪼ ★𝘗𝘭𝘢𝘯𝘴     -    ⏳𝘋𝘢𝘵𝘦 -  💸𝘗𝘳𝘪𝘤𝘦 - limit 
-•⪼ 🏆𝘗ro -    1𝘮𝘰𝘯𝘵𝘩 -   179 - 100gb
-•⪼ 💎 Ultra Pro  -   1𝘮𝘰𝘯𝘵𝘩 -   199 - 1000gb
+•⪼ ★𝘗𝘭𝘢𝘯𝘴     -    ⏳𝘋𝘢𝘵𝘦 -  💸prix - limite
+•⪼ 🏆𝘗ro -    1mois -   1000f - 100gb
+•⪼ 💎 Ultra Pro  -   1mois -   2000f - 1000gb
 
-- 𝘋𝘪𝘴𝘤𝘰𝘶𝘯𝘵 𝘈𝘭𝘭 𝘗𝘭𝘢𝘯 𝘙𝘴.9
+- <i> Pour nos plans sont en France CFA </i>
     """
     THUMBNAIL = """
-🌌 <b><u>Hᴏᴡ Tᴏ Sᴇᴛ Tʜᴜᴍʙɴɪʟᴇ</u></b>
+🌌 <b><u>Comment Ajouter une vignette</u></b>
 
-<b>•></b> Sᴇɴᴅ Aɴy Pʜᴏᴛᴏ Tᴏ Aᴜᴛᴏᴍᴀᴛɪᴄᴀʟʟy Sᴇᴛ Tʜᴜᴍʙɴɪʟᴇ.
-<b>•></b> /del_thumb Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Dᴇʟᴇᴛᴇ Yᴏᴜʀ Oʟᴅ Tʜᴜᴍʙɴɪʟᴇ.
-<b>•></b> /view_thumb Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Vɪᴇᴡ Yᴏᴜʀ Cᴜʀʀᴇɴᴛ Tʜᴜᴍʙɴɪʟᴇ.
+<b>•></b> Envoyer n'importe quel photo jpg, puis elle sera automatiquement ajoutée comme vignette.
+<b>•></b> /del_thumb Utilise cette commande pour supprimer ton ancienne vignette.
+<b>•></b> /view_thumb Utilise cette commande pour voir ta vignette.
 """
     CAPTION= """
 📑 <b><u>Hᴏᴡ Tᴏ Sᴇᴛ Cᴜꜱᴛᴏᴍ Cᴀᴩᴛɪᴏɴ</u></b>
 
-<b>•></b> /set_caption - Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Sᴇᴛ ᴀ Cᴜꜱᴛᴏᴍ Cᴀᴩᴛɪᴏɴ
-<b>•></b> /see_caption - Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Vɪᴇᴡ Yᴏᴜʀ Cᴜꜱᴛᴏᴍ Cᴀᴩᴛɪᴏɴ
-<b>•></b> /del_caption - Uꜱᴇ Tʜɪꜱ Cᴏᴍᴍᴀɴᴅ Tᴏ Dᴇʟᴇᴛᴇ Yᴏᴜʀ Cᴜꜱᴛᴏᴍ Cᴀᴩᴛɪᴏɴ
+<b>•></b> /set_caption - Utilise cette commande pour définir une légende
+<b>•></b> /see_caption - Utilise cette commande pour voir ta légende
+<b>•></b> /del_caption - utilise cette commande pour supprimer ta légende définie
 
-Exᴀᴍᴩʟᴇ:- `/set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
-💾 Sɪᴢᴇ: {filesize}
-⏰ Dᴜʀᴀᴛɪᴏɴ: {duration}`
+Exᴀᴍᴩʟᴇ:- `/set_caption 📕 Nom Du fıchıer: {filename}
+💾 Taille: {filesize}
+⏰ Durée: {duration}`
 """
     BOT_STATUS = """
-⚡️ ʙᴏᴛ sᴛᴀᴛᴜs ⚡️
+⚡️ Status du bot ⚡️
 
-⌚️ ʙᴏᴛ ᴜᴩᴛɪᴍᴇ: `{}`
-👭 ᴛᴏᴛᴀʟ ᴜsᴇʀꜱ: `{}`
-💸 ᴛᴏᴛᴀʟ ᴘʀᴇᴍɪᴜᴍ ᴜsᴇʀs: `{}`
-֍ ᴜᴘʟᴏᴀᴅ: `{}`
-⊙ ᴅᴏᴡɴʟᴏᴀᴅ: `{}`
+⌚️ Temps de fonction: `{}`
+👭 Total utilisateurs: `{}`
+💸 Utilisateurs premium: `{}`
+֍ Total téléversé: `{}`
+⊙ Total téléchargez: `{}`
 """
     LIVE_STATUS = """
 ⚡ ʟɪᴠᴇ sᴇʀᴠᴇʀ sᴛᴀᴛᴜs ⚡
@@ -137,15 +137,15 @@ Exᴀᴍᴩʟᴇ:- `/set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 V𝟹.𝟶.𝟶 [STABLE]
 """
     DIGITAL_METADATA = """
-❪ SET CUSTOM METADATA ❫
+❪ Personnalisé la metadata ❫
 
-- /metadata - Tᴏ Sᴇᴛ & Cʜᴀɴɢᴇ ʏᴏᴜʀ ᴍᴇᴛᴀᴅᴀᴛᴀ ᴄᴏᴅᴇ
+- /metadata - pour définir ou changer le code de la méta-donnée
 
-☞ Fᴏʀ Exᴀᴍᴘʟᴇ:-
+☞ Par exemple:-
 
-◦ <code> -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- @Rkn_Bots" -metadata author="@RknDeveloper" -metadata:s:s title="Subtitled By :- @Rkn_Bots" -metadata:s:a title="By :- @Rkn_Bots" -metadata:s:v title="By:- @RknDeveloper" </code>
+◦ <code> -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- @BotZFlix" -metadata author="@Kingcey" -metadata:s:s title="Subtitled By :- @BotZFlix" -metadata:s:a title="By :- @kingcey" -metadata:s:v title="By:- @kingcey" </code>
 
-📥 Fᴏʀ Hᴇʟᴘ Cᴏɴᴛ. @Digital_Botz
+📥 Pour tout aide. @BotZFlix
 """
     
     CUSTOM_FILE_NAME = """
@@ -153,44 +153,42 @@ V𝟹.𝟶.𝟶 [STABLE]
 
 you can pre-add a prefix and suffix along with your new filename
 
-➢ /set_prefix - To add a prefix along with your _filename.
-➢ /see_prefix - Tᴏ Sᴇᴇ Yᴏᴜʀ Pʀᴇғɪx !!
-➢ /del_prefix - Tᴏ Dᴇʟᴇᴛᴇ Yᴏᴜʀ Pʀᴇғɪx !!
-➢ /set_suffix - To add a suffix along with your filename_.
-➢ /see_suffix - Tᴏ Sᴇᴇ Yᴏᴜʀ Sᴜғғɪx !!
-➢ /del_suffix - Tᴏ Dᴇʟᴇᴛᴇ Yᴏᴜʀ Sᴜғғɪx !!
+➢ /set_prefix - pour ajouter une préfixe.
+➢ /see_prefix - Pour voir votre prefixe !!
+➢ /del_prefix - Supprimé le prefixe !!
+➢ /set_suffix - pour ajouter une suffixe.
+➢ /see_suffix - Pour voir votre suffixe !!
+➢ /del_suffix - Pour supprimer votre suffixe !!
 
-Exᴀᴍᴩʟᴇ:- `/set_suffix @Digital_Botz`
-Exᴀᴍᴩʟᴇ:- `/set_prefix @Digital_Botz`
+Exᴀᴍᴩʟᴇ:- `/set_suffix @BotZFlix`
+Exᴀᴍᴩʟᴇ:- `/set_prefix @BotZFlix`
 """
     
     #⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 #⚠️ Dᴏɴ'ᴛ Rᴇᴍᴏᴠᴇ Oᴜʀ Cʀᴇᴅɪᴛꜱ @RknDeveloper🙏🥲
     # ᴡʜᴏᴇᴠᴇʀ ɪs ᴅᴇᴘʟᴏʏɪɴɢ ᴛʜɪs ʀᴇᴘᴏ ɪs ᴡᴀʀɴᴇᴅ ⚠️ ᴅᴏ ɴᴏᴛ ʀᴇᴍᴏᴠᴇ ᴄʀᴇᴅɪᴛs ɢɪᴠᴇɴ ɪɴ ᴛʜɪs ʀᴇᴘᴏ #ғɪʀsᴛ ᴀɴᴅ ʟᴀsᴛ ᴡᴀʀɴɪɴɢ ⚠️
-    DEV_TXT = """<b><u>Sᴩᴇᴄɪᴀʟ Tʜᴀɴᴋꜱ & Dᴇᴠᴇʟᴏᴩᴇʀꜱ</b></u>
+    DEV_TXT = """<b><u>Spécial merci pour mon développeur</b></u>
     
-» 𝗦𝗢𝗨𝗥𝗖𝗘 𝗖𝗢𝗗𝗘 : <a href=https://github.com/DigitalBotz/Digital-Rename-Bot>Digital-Rename-Bot</a>
+Y'a pas beaucoup à voir ici 
 
-• ❣️ <a href=https://github.com/RknDeveloper>RknDeveloper</a>
-• ❣️ <a href=https://github.com/DigitalBotz>DigitalBotz</a>
-• ❣️ <a href=https://github.com/JayMahakal98>Jay Mahakal</a> """
+• ❣️ Bon à plus """
     # ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️
 
     SEND_METADATA = """
 ❪ SET CUSTOM METADATA ❫
 
-☞ Fᴏʀ Exᴀᴍᴘʟᴇ:-
+☞ Par exemple:-
 
-◦ <code> -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- @Rkn_Bots" -metadata author="@RknDeveloper" -metadata:s:s title="Subtitled By :- @Rkn_Bots" -metadata:s:a title="By :- @Rkn_Bots" -metadata:s:v title="By:- @RknDeveloper" </code>
+◦ <code> -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- @BotZFlix" -metadata author="@Kingcey" -metadata:s:s title="Subtitled By :- @BotZFlix" -metadata:s:a title="By :- @Kingcey" -metadata:s:v title="By:- @Kingcey" </code>
 
-📥 Fᴏʀ Hᴇʟᴘ Cᴏɴᴛ. @Digital_Botz
+📥 Pour tout aide. @BotZFlix
 """
     
     RKN_PROGRESS = """<b>\n
 ╭━━━━❰RKN PROCESSING...❱━➣
-┣⪼ 🗃️ ꜱɪᴢᴇ: {1} | {2}
-┣⪼ ⏳️ ᴅᴏɴᴇ : {0}%
-┣⪼ 🚀 ꜱᴩᴇᴇᴅ: {3}/s
+┣⪼ 🗃️ Poids: {1} | {2}
+┣⪼ ⏳️ pourcentage: {0}%
+┣⪼ 🚀 Vitesse: {3}/s
 ┣⪼ ⏰️ ᴇᴛᴀ: {4}
 ╰━━━━━━━━━━━━━━━➣ </b>"""
 
