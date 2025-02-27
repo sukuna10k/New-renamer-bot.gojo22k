@@ -46,7 +46,7 @@ class Config(object):
     DB_URL = os.environ.get("DB_URL","mongodb+srv://tgbot:4KzEdxEl4YldwwFR@tg.vr8ef.mongodb.net/?retryWrites=true&w=majority&appName=Tg")
  
     # other configs
-    RKN_PIC = os.environ.get("RKN_PIC", "https://telegra.ph/file/b746aadfe59959eb76f59.jpg")
+    RKN_PIC = os.environ.get("RKN_PIC", "https://envs.sh/iw0.jpg")
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7428552084').split()]
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002376378205"))
 
@@ -67,7 +67,7 @@ class rkn(object):
     # part of text configuration
     START_TXT = """<b>Salut, {}👋
 
-𝐶𝑒 𝑏𝑜𝑡 𝑒𝑠𝑡 𝑢𝑛 𝑜𝑢𝑡𝑖𝑙 𝑎𝑣𝑎𝑛𝑐é 𝑒𝑡 𝑝𝑢𝑖𝑠𝑠𝑎𝑛𝑡. 𝐸𝑛 𝑢𝑡𝑖𝑙𝑖𝑠𝑎𝑛𝑡 𝑐𝑒 𝑏𝑜𝑡, 𝑣𝑜𝑢𝑠 𝑝𝑜𝑢𝑣𝑒𝑧 𝑟𝑒𝑛𝑜𝑚𝑚𝑒𝑟 𝑒𝑡 𝑐ℎ𝑎𝑛𝑔𝑒𝑟 𝑙𝑎 𝑚𝑖𝑛𝑖𝑎𝑡𝑢𝑟𝑒 𝑑𝑒 𝑣𝑜𝑡𝑟𝑒 𝑓𝑖𝑐ℎ𝑖𝑒𝑟. 𝑉𝑜𝑢𝑠 𝑝𝑜𝑢𝑣𝑒𝑧 é𝑔𝑎𝑙𝑒𝑚𝑒𝑛𝑡 𝑐𝑜𝑛𝑣𝑒𝑟𝑡𝑖𝑟 𝑢𝑛𝑒 𝑣𝑖𝑑é𝑜 𝑒𝑛 𝑓𝑖𝑐ℎ𝑖𝑒𝑟 𝑒𝑡 𝑢𝑛 𝑓𝑖𝑐ℎ𝑖𝑒𝑟 𝑒𝑛 𝑣𝑖𝑑é𝑜. 𝐶𝑒 𝑏𝑜𝑡 𝑝𝑟𝑒𝑛𝑑 é𝑔𝑎𝑙𝑒𝑚𝑒𝑛𝑡 𝑒𝑛 𝑐ℎ𝑎𝑟𝑔𝑒 𝑙𝑒𝑠 𝑚𝑖𝑛𝑖𝑎𝑡𝑢𝑟𝑒𝑠 𝑝𝑒𝑟𝑠𝑜𝑛𝑛𝑎𝑙𝑖𝑠é𝑒𝑠 𝑒𝑡 𝑙𝑒𝑠 𝑙é𝑔𝑒𝑛𝑑𝑒𝑠 𝑝𝑒𝑟𝑠𝑜𝑛𝑎𝑙𝑖𝑠é𝑒𝑠
+Je suis Yor Renamer Bot. un outil avancé et puissant. En utilisant ce bot, vous pouvez renommer et changer la miniature de votre fichier. Vous pouvez également convertir une vidéo en fichier et un fichier en vidéo. Ce bot prend également en charge les miniatures personnalisées et les légendes personnalisées
 
 <blockquote> Crée par : @BotZFlix 🤪</blockquote> </b>"""
 
