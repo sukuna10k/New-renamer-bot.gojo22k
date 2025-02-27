@@ -75,9 +75,9 @@ Je suis Yor Renamer Bot. un outil avancé et puissant. En utilisant ce bot, vous
 ├🤖 Mon Nom : {}
 ├🖥️ Développeur : <a href='t.me/Kingcey'>◡̈⃝ㅤ🇰ιηg¢єу</a>
 ├👨‍💻 Programmeur : <a href='t.me/Botzflix'>BotZFlix</a>
-├📕 Lɪʙʀᴀʀie : {}
-├✏️ Lᴀɴɢᴜᴀɢᴇ: {}
-├💾 Dᴀᴛᴀ Bᴀꜱᴇ: {}
+├📕 Lɪʙʀᴀʀie : <a href='pyrogram.org'>Pyrogram</a>
+├✏️ Lᴀɴɢᴜᴀɢᴇ: <a href='python.org'>Python</a>
+├💾 Dᴀᴛᴀ Bᴀꜱᴇ: MongoDB
 ├📊 ᴠᴇʀsɪᴏɴ: 3.5.1 </b>
 ╰───────────────⍟ """
 
