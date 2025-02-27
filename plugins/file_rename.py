@@ -78,11 +78,11 @@ async def rename_start(client, message):
     if await digital_botz.has_premium_access(user_id):
         if not Config.STRING_SESSION:
             if rkn_file.file_size > 2000 * 1024 * 1024:
-                 return await message.reply_text("Sᴏʀʀy Bʀᴏ Tʜɪꜱ Bᴏᴛ Iꜱ Dᴏᴇꜱɴ'ᴛ Sᴜᴩᴩᴏʀᴛ Uᴩʟᴏᴀᴅɪɴɢ Fɪʟᴇꜱ Bɪɢɢᴇʀ Tʜᴀɴ 2Gʙ+")
+                 return await message.reply_text("Desolé Bro mais je ne peux pas renommer un fichier qui dépasse 2Go")
 
         try:
             await message.reply_text(
-            text=f"**__ᴍᴇᴅɪᴀ ɪɴꜰᴏ\n\n◈ ᴏʟᴅ ꜰɪʟᴇ ɴᴀᴍᴇ: `{filename}`\n\n◈ ᴇxᴛᴇɴꜱɪᴏɴ: `{extension_type.upper()}`\n◈ ꜰɪʟᴇ ꜱɪᴢᴇ: `{filesize}`\n◈ ᴍɪᴍᴇ ᴛʏᴇᴩ: `{mime_type}`\n◈ ᴅᴄ ɪᴅ: `{dcid}`\n\nᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴛʜᴇ ɴᴇᴡ ғɪʟᴇɴᴀᴍᴇ ᴡɪᴛʜ ᴇxᴛᴇɴsɪᴏɴ ᴀɴᴅ ʀᴇᴘʟʏ ᴛʜɪs ᴍᴇssᴀɢᴇ....__**",
+            text=f"**◈ Ancien Nom: `{filename}`\n\n◈ Poids du fichier: `{filesize}`\n\n\nVeuillez __entrer le nouveau nom du fichier, en répondant à ce message............__**",
 	    reply_to_message_id=message.id,  
 	    reply_markup=ForceReply(True)
         )       
@@ -90,7 +90,7 @@ async def rename_start(client, message):
         except FloodWait as e:
             await sleep(e.value)
             await message.reply_text(
-            text=f"**__ᴍᴇᴅɪᴀ ɪɴꜰᴏ\n\n◈ ᴏʟᴅ ꜰɪʟᴇ ɴᴀᴍᴇ: `{filename}`\n\n◈ ᴇxᴛᴇɴꜱɪᴏɴ: `{extension_type.upper()}`\n◈ ꜰɪʟᴇ ꜱɪᴢᴇ: `{filesize}`\n◈ ᴍɪᴍᴇ ᴛʏᴇᴩ: `{mime_type}`\n◈ ᴅᴄ ɪᴅ: `{dcid}`\n\nᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴛʜᴇ ɴᴇᴡ ғɪʟᴇɴᴀᴍᴇ ᴡɪᴛʜ ᴇxᴛᴇɴsɪᴏɴ ᴀɴᴅ ʀᴇᴘʟʏ ᴛʜɪs ᴍᴇssᴀɢᴇ....__**",
+            text=f"**◈ Ancien Nom: `{filename}`\n\n◈ Poids du fichier: `{filesize}`\n\n\nVeuillez __entrer le nouveau nom du fichier, en répondant à ce message............__**",
 	    reply_to_message_id=message.id,  
 	    reply_markup=ForceReply(True)
         )
@@ -98,11 +98,11 @@ async def rename_start(client, message):
             pass
     else:
         if rkn_file.file_size > 2000 * 1024 * 1024:
-            return await message.reply_text("If you want to rename 4GB+ files then you will have to buy premium. /plans")
+            return await message.reply_text("Si t'a envie de renommer des fichiers jusqu'à 4Go, clique sur. /plans")
 
         try:
             await message.reply_text(
-            text=f"**__ᴍᴇᴅɪᴀ ɪɴꜰᴏ\n\n◈ ᴏʟᴅ ꜰɪʟᴇ ɴᴀᴍᴇ: `{filename}`\n\n◈ ᴇxᴛᴇɴꜱɪᴏɴ: `{extension_type.upper()}`\n◈ ꜰɪʟᴇ ꜱɪᴢᴇ: `{filesize}`\n◈ ᴍɪᴍᴇ ᴛʏᴇᴩ: `{mime_type}`\n◈ ᴅᴄ ɪᴅ: `{dcid}`\n\nᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴛʜᴇ ɴᴇᴡ ғɪʟᴇɴᴀᴍᴇ ᴡɪᴛʜ ᴇxᴛᴇɴsɪᴏɴ ᴀɴᴅ ʀᴇᴘʟʏ ᴛʜɪs ᴍᴇssᴀɢᴇ....__**",
+            text=f"**◈ Ancien Nom: `{filename}`\n\n◈ Poids du fichier: `{filesize}`\n\n\nVeuillez __entrer le nouveau nom du fichier, en répondant à ce message............__**",
 	    reply_to_message_id=message.id,  
 	    reply_markup=ForceReply(True)
         )       
@@ -110,7 +110,7 @@ async def rename_start(client, message):
         except FloodWait as e:
             await sleep(e.value)
             await message.reply_text(
-            text=f"**__ᴍᴇᴅɪᴀ ɪɴꜰᴏ\n\n◈ ᴏʟᴅ ꜰɪʟᴇ ɴᴀᴍᴇ: `{filename}`\n\n◈ ᴇxᴛᴇɴꜱɪᴏɴ: `{extension_type.upper()}`\n◈ ꜰɪʟᴇ ꜱɪᴢᴇ: `{filesize}`\n◈ ᴍɪᴍᴇ ᴛʏᴇᴩ: `{mime_type}`\n◈ ᴅᴄ ɪᴅ: `{dcid}`\n\nᴘʟᴇᴀsᴇ ᴇɴᴛᴇʀ ᴛʜᴇ ɴᴇᴡ ғɪʟᴇɴᴀᴍᴇ ᴡɪᴛʜ ᴇxᴛᴇɴsɪᴏɴ ᴀɴᴅ ʀᴇᴘʟʏ ᴛʜɪs ᴍᴇssᴀɢᴇ....__**",
+            text=f"**◈ Ancien Nom: `{filename}`\n\n◈ Poids du fichier: `{filesize}`\n\n\nVeuillez __entrer le nouveau nom du fichier, en répondant à ce message............__**",
 	    reply_to_message_id=message.id,  
 	    reply_markup=ForceReply(True)
         )
@@ -134,13 +134,13 @@ async def refunc(client, message):
             new_name = new_name + "." + extn
         await reply_message.delete()
 
-        button = [[InlineKeyboardButton("📁 Dᴏᴄᴜᴍᴇɴᴛ",callback_data = "upload_document")]]
+        button = [[InlineKeyboardButton("📁 Document",callback_data = "upload_document")]]
         if file.media in [MessageMediaType.VIDEO, MessageMediaType.DOCUMENT]:
-            button.append([InlineKeyboardButton("🎥 Vɪᴅᴇᴏ", callback_data = "upload_video")])
+            button.append([InlineKeyboardButton("🎥 Vidéo", callback_data = "upload_video")])
         elif file.media == MessageMediaType.AUDIO:
-            button.append([InlineKeyboardButton("🎵 Aᴜᴅɪᴏ", callback_data = "upload_audio")])
+            button.append([InlineKeyboardButton("🎵 Audio", callback_data = "upload_audio")])
         await message.reply(
-            text=f"**Sᴇʟᴇᴄᴛ Tʜᴇ Oᴜᴛᴩᴜᴛ Fɪʟᴇ Tyᴩᴇ**\n**• Fɪʟᴇ Nᴀᴍᴇ :-**`{new_name}`",
+            text=f"**Sélectionne la sortie du fichier**\n**• Nom du fichier :-**`{new_name}`",
             reply_to_message_id=file.id,
             reply_markup=InlineKeyboardMarkup(button)
         )
@@ -149,7 +149,7 @@ async def refunc(client, message):
 
 @Client.on_callback_query(filters.regex("upload"))
 async def doc(bot, update):
-    rkn_processing = await update.message.edit("`Processing...`")
+    rkn_processing = await update.message.edit("`Démarrage Du processus...`")
 	
     # Creating Directory for Metadata
     if not os.path.isdir("Metadata"):
@@ -166,7 +166,7 @@ async def doc(bot, update):
         suffix = await digital_botz.get_suffix(user_id)
         new_filename = add_prefix_suffix(new_filename_, prefix, suffix)
     except Exception as e:
-        return await rkn_processing.edit(f"⚠️ Something went wrong can't able to set Prefix or Suffix ☹️ \n\n❄️ Contact My Creator -> @RknDeveloperr\nError: {e}")
+        return await rkn_processing.edit(f"⚠️ Quelque chose c'est mal passé avec la sortie du fichier. ☹️ \n\n❄️ Contact Mon Createur -> @Kingcey\nError: {e}")
 
     # msg file location 
     file = update.message.reply_to_message
